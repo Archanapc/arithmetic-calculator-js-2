@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 20px;
+}
+.calculator {
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+    border: 2px solid rgb(84, 84, 179);
+    padding: 20px;
+}
+
+button{
+   padding: 10px 30px;
+   border-radius: 30px;
+   border: 1px solid gray;
+   background-color: blue;
+   color: white;
+}
+
+button:hover{
+    background: rgb(80, 80, 252);
+    cursor: pointer;
+    
+}
