@@ -1,25 +1,52 @@
-body {
-    margin: 0;
-    padding: 20px;
-}
-.calculator {
-    width: 400px;
-    margin: 100px auto;
-    text-align: center;
-    border: 2px solid rgb(84, 84, 179);
+HTML CSS JSResult Skip Results Iframe
+EDIT ON
+body {  
+    background-color: #110f0f;
     padding: 20px;
 }
 
-button{
-   padding: 10px 30px;
-   border-radius: 30px;
-   border: 1px solid gray;
-   background-color: blue;
-   color: white;
+.grid-container {
+    display: grid;
+    align-items: center;
+    justify-content: center; 
 }
 
-button:hover{
-    background: rgb(80, 80, 252);
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1px;
+    background-color: #999;
+} 
+
+.calculator-grid button {
+    font-size: 25px;
+    background-color: #fff;
+    border: none;
     cursor: pointer;
-    
+    font-family: 'DM Mono', monospace;
+} 
+
+textarea {
+  grid-column: span 4;
+  font-family: 'DM Mono', monospace;
+  font-size: 25px;
+  text-align: end;
+  background-color: #bfd3e9;
+  padding: 15px;
+  border: none;
 }
+
+.calculator-grid button:nth-child(n+18) {
+    background-color: rgb(42, 113, 194); 
+}
+
+
+button:hover,
+.calculator-grid button:nth-child(n+18):hover {
+    background-color: #440b15;
+    color: white;
+    transition: 0.2s;
+}
+
+
